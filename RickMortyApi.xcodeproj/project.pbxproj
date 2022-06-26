@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		322857A22868D764005A9BEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322857A02868D764005A9BEE /* Main.storyboard */; };
 		322857A42868D766005A9BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322857A32868D766005A9BEE /* Assets.xcassets */; };
 		322857A72868D766005A9BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322857A52868D766005A9BEE /* LaunchScreen.storyboard */; };
+		322857B02868D883005A9BEE /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322857AF2868D883005A9BEE /* ResponseData.swift */; };
+		322857B22868DA9F005A9BEE /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322857B12868DA9F005A9BEE /* ListItem.swift */; };
 		AAA720EE9229EBB720E6781D /* Pods_RickMortyApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D57E299048E8972C16C289 /* Pods_RickMortyApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		322857A32868D766005A9BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		322857A62868D766005A9BEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		322857A82868D766005A9BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322857AF2868D883005A9BEE /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		322857B12868DA9F005A9BEE /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		40902891E3BDB64674E70870 /* Pods-RickMortyApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApi.release.xcconfig"; path = "Target Support Files/Pods-RickMortyApi/Pods-RickMortyApi.release.xcconfig"; sourceTree = "<group>"; };
 		7145D262C7F3765109B45660 /* Pods-RickMortyApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApi.debug.xcconfig"; path = "Target Support Files/Pods-RickMortyApi/Pods-RickMortyApi.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D57E299048E8972C16C289 /* Pods_RickMortyApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMortyApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,7 @@
 		322857992868D764005A9BEE /* RickMortyApi */ = {
 			isa = PBXGroup;
 			children = (
+				322857AE2868D872005A9BEE /* model */,
 				3228579A2868D764005A9BEE /* AppDelegate.swift */,
 				3228579C2868D764005A9BEE /* SceneDelegate.swift */,
 				3228579E2868D764005A9BEE /* ViewController.swift */,
@@ -70,8 +75,17 @@
 				322857A32868D766005A9BEE /* Assets.xcassets */,
 				322857A52868D766005A9BEE /* LaunchScreen.storyboard */,
 				322857A82868D766005A9BEE /* Info.plist */,
+				322857B12868DA9F005A9BEE /* ListItem.swift */,
 			);
 			path = RickMortyApi;
+			sourceTree = "<group>";
+		};
+		322857AE2868D872005A9BEE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				322857AF2868D883005A9BEE /* ResponseData.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		6C8DF93723BC45CCED84A1A9 /* Frameworks */ = {
@@ -88,7 +102,6 @@
 				7145D262C7F3765109B45660 /* Pods-RickMortyApi.debug.xcconfig */,
 				40902891E3BDB64674E70870 /* Pods-RickMortyApi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322857B22868DA9F005A9BEE /* ListItem.swift in Sources */,
 				3228579F2868D764005A9BEE /* ViewController.swift in Sources */,
 				3228579B2868D764005A9BEE /* AppDelegate.swift in Sources */,
+				322857B02868D883005A9BEE /* ResponseData.swift in Sources */,
 				3228579D2868D764005A9BEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
