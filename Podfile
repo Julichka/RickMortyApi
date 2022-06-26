@@ -10,5 +10,6 @@ target 'RickMortyApi' do
 pod 'Alamofire', '~> 5.6.1'
 pod 'SwiftyJSON', '~> 4.0'
 pod 'ObjectMapper', '~> 3.5'
+pod 'Kingfisher', '~> 7.0'
 
 end

@@ -29,6 +29,10 @@ class ViewController: UITableViewController {
         return 1
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as? ListItem else { return  UITableViewCell() }
             
@@ -57,6 +61,16 @@ class ViewController: UITableViewController {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell,
+            let indexPath = self.tableView.indexPath(for: cell) {
+
+             let vc = segue.destination as! CharacterDetailView
+             //Now simply set the title property of vc
+             vc.character = results[indexPath.row]
+         }
     }
 
 }

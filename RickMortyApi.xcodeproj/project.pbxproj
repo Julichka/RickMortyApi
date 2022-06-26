@@ -15,6 +15,7 @@
 		322857A72868D766005A9BEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322857A52868D766005A9BEE /* LaunchScreen.storyboard */; };
 		322857B02868D883005A9BEE /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322857AF2868D883005A9BEE /* ResponseData.swift */; };
 		322857B22868DA9F005A9BEE /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322857B12868DA9F005A9BEE /* ListItem.swift */; };
+		322857B42868DD22005A9BEE /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322857B32868DD22005A9BEE /* CharacterDetailView.swift */; };
 		AAA720EE9229EBB720E6781D /* Pods_RickMortyApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D57E299048E8972C16C289 /* Pods_RickMortyApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		322857A82868D766005A9BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322857AF2868D883005A9BEE /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		322857B12868DA9F005A9BEE /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		322857B32868DD22005A9BEE /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		40902891E3BDB64674E70870 /* Pods-RickMortyApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApi.release.xcconfig"; path = "Target Support Files/Pods-RickMortyApi/Pods-RickMortyApi.release.xcconfig"; sourceTree = "<group>"; };
 		7145D262C7F3765109B45660 /* Pods-RickMortyApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMortyApi.debug.xcconfig"; path = "Target Support Files/Pods-RickMortyApi/Pods-RickMortyApi.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D57E299048E8972C16C289 /* Pods_RickMortyApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMortyApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				322857A52868D766005A9BEE /* LaunchScreen.storyboard */,
 				322857A82868D766005A9BEE /* Info.plist */,
 				322857B12868DA9F005A9BEE /* ListItem.swift */,
+				322857B32868DD22005A9BEE /* CharacterDetailView.swift */,
 			);
 			path = RickMortyApi;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				322857B22868DA9F005A9BEE /* ListItem.swift in Sources */,
 				3228579F2868D764005A9BEE /* ViewController.swift in Sources */,
 				3228579B2868D764005A9BEE /* AppDelegate.swift in Sources */,
+				322857B42868DD22005A9BEE /* CharacterDetailView.swift in Sources */,
 				322857B02868D883005A9BEE /* ResponseData.swift in Sources */,
 				3228579D2868D764005A9BEE /* SceneDelegate.swift in Sources */,
 			);
