@@ -24,6 +24,15 @@ class CharacterDetailView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        name.text = "Name: \(character?.name ?? "")"
+        gender.text = "Gender: \(character?.gender ?? "")"
+        origin.text = "Origin: \(character?.getOriginName() ?? "")"
+        status.text = "Status: \(character?.status ?? "")"
+        species.text = "Species: \(character?.species ?? "")"
         
+        guard let url = URL.init(string: character?.image ?? "") else {
+                        return
+                    }
+        icon.kf.setImage(with: url)
     }
 }

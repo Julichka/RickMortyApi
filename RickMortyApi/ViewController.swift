@@ -39,6 +39,12 @@ class ViewController: UITableViewController {
             let data = self.results[indexPath.row]
             
         cell.name.text = data.name
+        
+        
+        guard let url = URL.init(string: data.image ?? "") else {
+                        return cell
+                    }
+        cell.icon.kf.setImage(with: url)
              
             return cell
         }
